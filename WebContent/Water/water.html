@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Water Problem</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="stylesheet"  href="../jquery.mobile-1.0.1.min.css" type="text/css" charset="utf-8" />
+	<link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+	<script src="../jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../jquery.mobile-1.0.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<!-- jQuery scrollview plugin: start -->
+	<link rel="stylesheet" href="../scrollview/jquery.mobile.scrollview.css" />
+	<script src="../scrollview/jquery.easing.1.3.js"></script>
+	<script src="../scrollview/jquery.mobile.scrollview.js"></script>
+	<script src="../scrollview/scrollview.js"></script>
+	<!-- jQuery scrollview plugin: end -->
+	<script src="water.js" type="text/javascript" charset="utf-8"></script>
+	<!-- scrollview start -->
+	<script src="../scrollview/jquery.easing.1.3.js"></script>
+	<script src="../scrollview/jquery.mobile.scrollview.js"></script>
+	<script src="../scrollview/scrollview.js"></script>
+	<link rel="stylesheet"  href="../scrollview/jquery.mobile.scrollview.css" />
+	<!-- scrollview end -->
+	<script type="text/javascript" charset="utf-8">
+		function initialize() {	
+			$(document.body).water();
+		}
+		$(initialize);
+	</script>
+</head>
+<body>
+	<div class="bg"></div>
+	
+	<div class="backButton">
+		<button class="reset">Reset</button>
+	</div>
+	
+	<div class="bottles">
+		<div class="bottleL bottle3">
+			<div class="bottleL water3"></div>
+		</div>
+		<div class="bottleL bottle3">
+			
+			<!--<div class="bottle3-info">3 liter</div> -->
+			
+			<object type="image/svg+xml" data="images/Bottle3.svg" heigth="190"> </object>
+			
+			<!-- <div class="bottle3-info">3 liters flasken har <strong class="bottle3-content">?</strong> liter</div>-->
+		</div>
+		
+		<div class="bottleR bottle5">
+			<div class="bottleR water5"></div>
+		</div>
+		<div class="bottleR bottle5">
+			
+			<!--<div class="bottle3-info">5 liter</div> -->
+			
+			<object type="image/svg+xml" data="images/Bottle5.svg" height="317"></object>
+			
+		
+			<!--<div class="bottle5-info">5 liters flasken har <strong class="bottle5-content">?</strong> liter</div>-->
+		</div>
+	</div>
+	
+	<div class="water-control">
+		<div class="bottle3-control">
+			<button class="button  fill-bottle3">Fyld</button>
+			<button class="button  empty-bottle3">Tøm</button>
+			<button class="button  transfer-3to5">Flyt til 5 liters flasken</button>
+		</div>
+		<div class="bottle5-control">
+			<button class="button  fill-bottle5">Fyld</button>
+			<button class="button  empty-bottle5">Tøm</button>
+			<button class="button  transfer-5to3">Flyt til 3 liters flasken</button>
+		</div>
+	</div>
+	
+	<div class="hid">
+		<div class="hid-water">Du har udført <strong class="hid-water-actions">0</strong> handlinger </div>
+	</div>
+	
+	<div class="modal-shadow">
+		<div class="modal-box">
+			<!--
+			<div class="dtu-logo"></div>
+			<div class="imm-logo"></div>
+			-->
+			<div class="text starttext">
+				<h1>Ud fra disse to flasker, en 3 liters og en 5 liters, skal du kunne producerer 4 liter vand </h1>
+				<h2>Du kan dog kun fylde eller tømme flaskerne samt flytte indeholdet fra den ene flaske til den anden</h2>
+			</div>
+			<div class="text wintext-1"><h1>Du gjorde det!</h1><h2>Du fik produceret 4 liter i <span class="actions-label">?</span> handlinger!</h2></div>
+			<div class="hint water-hint"><h2>Kan du finde en algoritme hvor du gør det på 6 handlinger?</h2></div>
+			<div class="controls">
+				<button class="startButton">Start forfra!</button>
+				<button class="ReturnButton"  onclick="location.href='../index.html';">Tilbage</button>
+				<small>Demonstration er udviklet af Thomas Kjærgaard Malowanczyk (s103407@student.dtu.dk) til algoritmeboden ved Softwareteknologi i forbindelse med Åbent Hus arrangementet den 5. marts 2015</small>
+			</div>
+		</div>
+	</div>	
+	
+</body>
+</html>

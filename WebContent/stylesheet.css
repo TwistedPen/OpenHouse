@@ -1,0 +1,56 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+	overflow: hidden;
+	height: 100%;
+	font-size: 1.5em;
+}
+
+h1 {
+	font-size: 1.5em;
+}
+
+h2 {
+	font-size: 1.0em;
+}
+
+.modal-box {
+	background-color: rgba(255, 255, 255, 0.8);
+	background-image: url("images/logo-compute.png");
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	position: fixed;
+	left: 10%;
+	top: 10%;
+	width: 80%;
+	height: 80%;
+	border-radius: 1em;
+}
+
+.modal-box-topspacer {
+	height: 134px;
+}
+
+.modal-box .controls {
+	position: absolute;
+	bottom: 101px; /*81+20*/
+	left: 1em;
+	right: 1em;
+}
+
+.modal-box .controls small {
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-size: 0.6em;
+}
+
+
+.modal-box .controls .text {
+	margin: 1em;
+	text-align: center;
+}

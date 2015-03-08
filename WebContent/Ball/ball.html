@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Ball Problem</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="stylesheet"  href="../jquery.mobile-1.0.1.min.css" type="text/css" charset="utf-8" />
+	<link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+	<script src="../jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
+	<script src="jquery.ui.touch-punch.min.js"></script>
+	<script src="../jquery.mobile-1.0.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<!-- jQuery scrollview plugin: start -->
+	<link rel="stylesheet" href="../scrollview/jquery.mobile.scrollview.css" />
+	<script src="../scrollview/jquery.easing.1.3.js"></script>
+	<script src="../scrollview/jquery.mobile.scrollview.js"></script>
+	<script src="../scrollview/scrollview.js"></script>
+	<!-- jQuery scrollview plugin: end -->
+	<script src="ball.js" type="text/javascript" charset="utf-8"></script>
+	<!-- scrollview start -->
+	<script src="../scrollview/jquery.easing.1.3.js"></script>
+	<script src="../scrollview/jquery.mobile.scrollview.js"></script>
+	<script src="../scrollview/scrollview.js"></script>
+	<link rel="stylesheet"  href="../scrollview/jquery.mobile.scrollview.css" />
+	<!-- scrollview end -->
+	<script type="text/javascript" charset="utf-8">
+		function initialize() {	
+			$(document.body).ball();
+		}
+		$(initialize);
+	</script>
+</head>
+<body>
+	<div class="backButton">
+		<button class="reset">Reset</button>
+	</div>
+
+	<div class="scale">
+		<div class="scaleB">
+			<object type="image/svg+xml" data="images/ScaleB.svg" heigth="25"> </object>
+		</div>
+		<div class="scaleM">
+			<object type="image/svg+xml" data="images/ScaleM.svg" heigth="350"> </object>
+		</div>
+		<div class="scaleP-right">
+			<object type="image/svg+xml" data="images/ScaleP.svg" heigth="225"> </object>
+		</div>
+		<div class="scaleP-left">
+			<object type="image/svg+xml" data="images/ScaleP.svg" heigth="225"> </object>
+		</div>
+		 
+		<div class="plate right-plate">
+			<!-- <span class="rightW">?</span> -->
+		</div>
+		
+		<div class="plate left-plate">			
+			<!-- <span class="leftW">?</span> -->
+		</div>
+		 
+		<div class="wBox">
+			<button class="weigh"> Vej </button>
+		</div>		
+	</div>
+	
+	<div class="hid">
+			<div class="hid-ball">Du har udført <strong class="hid-ball-attempts">0</strong> vejninger </div>
+	</div>
+	
+	<!-- <div class="trash">Trash can</div> -->
+	<div class="deposit">Correct Ball</div>
+	
+	
+	<div class="balls"></div>
+		
+	<div class="modal-shadow">
+		<div class="modal-box">
+			<!--
+			<div class="dtu-logo"></div>
+			<div class="imm-logo"></div>
+			-->
+			<div class="text starttext">
+				<h1>Find den bold hvis vægt er større end de 8 andre bolde </h1>
+				<h2>Træk bolde op på vægten for at veje dem mod hinanden</h2>
+			</div>
+			<div class="text wintext-1">
+				<h1>Du gjorde det!</h1>
+				<h2>Du fandt den tungeste bold i <span class="attempts-label">?</span> vejninger!</h2>
+			</div>
+			<div class="text failtext failtext1"><h1>Øv, du smed den rigtige boldt ud</h1></div>
+			<div class="text failtext failtext2"><h1>Øv, det var ikke den rigtige bold</h1></div>
+			<div class="hint ball-hint"><h2>Kan du finde en algoritme hvor du gør det på 2 vejninger?</h2></div>
+			<div class="controls">
+				<button class="startButton">Start forfra!</button>
+				<button class="ReturnButton"  onclick="location.href='../index.html';">Tilbage</button>
+				<small>Demonstration er udviklet af Thomas Kjærgaard Malowanczyk (s103407@student.dtu.dk) til algoritmeboden ved Softwareteknologi i forbindelse med Åbent Hus arrangementet den 5. marts 2015</small>
+			</div>
+		</div>
+	</div>
+		
+</body>
+</html>

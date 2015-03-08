@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<link rel="stylesheet"  href="jquery.mobile-1.0.1.min.css" type="text/css" charset="utf-8" />
+		<link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+		<script src="jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="jquery.mobile-1.0.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<!-- jQuery scrollview plugin: start -->
+		<link rel="stylesheet" href="scrollview/jquery.mobile.scrollview.css" />
+		<script src="scrollview/jquery.easing.1.3.js"></script>
+		<script src="scrollview/jquery.mobile.scrollview.js"></script>
+		<script src="scrollview/scrollview.js"></script>
+		<!-- jQuery scrollview plugin: end -->
+		<!-- scrollview start -->
+		<script src="scrollview/jquery.easing.1.3.js"></script>
+		<script src="scrollview/jquery.mobile.scrollview.js"></script>
+		<script src="scrollview/scrollview.js"></script>
+		<link rel="stylesheet"  href="scrollview/jquery.mobile.scrollview.css" />
+		<!-- scrollview end -->
+		
+	<title>DTU åbenthus</title>
+</head>
+<body>
+		<div class="modal-box">
+			<div class="controls">
+				<div class="text starttext">
+					<h1>Velkommen til DTU's Åbent Hus</h1>
+					<h2>
+					For at få et bedre indblik i de typer problemer som software teknologi studerende kan møde har vi lavet
+					3 opgaver som du kan prøve at løse. 
+					</h2>
+				</div>
+			<a href="#DroppingEggs/egg.html" data-role="button" id="drop-egg">Æg Problemet</a>
+			<button class="water" onmousedown="location.href='Water/water.html';">Vand problemet</button>
+			<button class="ball-weight" onmousedown="location.href='Ball/ball.html';">Bold problemet</button>
+			<small>Demonstration er udviklet af Kræn Hansen (s082932@student.dtu.dk) og Thomas Kjærgaard Malowanczyk (s103407@student.dtu.dk)</small> 
+			<small>til algoritmeboden ved Softwareteknologi i forbindelse med Åbent Hus arrangementet den 5. marts 2015</small>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			$('drop-egg').on('click', function() {
+    			location.href="DroppingEggs/egg.html";
+    			consol.log("test");
+    			});
+		</script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+	overflow: hidden;
+	height: 100%;
+	font-size: 1.5em;
+}
+
+h1 {
+	font-size: 1.5em;
+}
+h2 {
+	font-size: 1.0em;
+}
+
+.scale {
+	position: absolute;
+	top: 15%;
+	height: 400px;
+	left: 15%;
+	right: 15%;
+}
+
+.scaleM{
+	position: absolute;
+	left:50%;
+	margin-left: -125px;
+}
+.scaleB{
+	position: absolute;
+	left:50%;
+	top: 18px;
+	margin-left: -250px;
+}
+
+.scaleP-left{
+	position: absolute;
+	left:50%;
+	top: 22px;
+	width: 200px; 
+	height: 225px;
+	margin-left: -330px;
+}
+.scaleP-right{
+	position: absolute;
+	left:50%;
+	top: 22px;
+	width: 200px; 
+	height: 225px;
+	margin-left: 130px;
+}
+
+.left-plate {
+	position: absolute;
+	left:50%;
+	top: 22px;
+	width: 200px; 
+	height: 210px;
+	margin-left: -330px;
+	
+	/*background: rgb(150, 0, 0);*/
+}
+.right-plate {
+	position: absolute;
+	left:50%;
+	top: 22px;
+	width: 200px; 
+	height: 210px;
+	margin-left: 130px;
+	/*background: rgb(0, 150, 0);*/
+}
+
+.platebottom{
+	position: absolute;
+	bottom: 0%;
+	left: 0%;
+	right: 0%;
+}
+
+.wBox {
+	position: absolute;
+	top: 355px;	
+	left: 40%;
+	right: 40%
+}
+
+
+.hid {
+	position: fixed;
+	bottom: 0.5em;
+	left: 0px;
+	right: 0.5em;
+	height: auto;
+	text-align: center;
+}
+
+.hid.bad {
+	color: rgba(255, 80, 80, 1.0);
+}
+
+.balls {
+	position: absolute;
+	top: 83%;
+	height: 50px;
+	left: 10%;
+	right: 20%;
+}
+
+.ball {
+	position: absolute;
+	width: 50px;
+	height: 50px; 
+	/*padding: 0.5em;
+	margin: 1em;*/
+	text-align: center;
+}
+
+.Ballart{
+	pointer-events:none;
+}
+.modal-shadow {
+	display: none;
+	pointer-events: auto;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.33);
+}
+
+.modal-box {
+	background-color: rgba(255, 255, 255, 0.8);
+	background-image: url("images/logo-compute.png");
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	position: fixed;
+	left: 10%;
+	top: 10%;
+	width: 80%;
+	height:80%;
+	border-radius: 1em;
+}
+
+.modal-box-topspacer {
+	height: 134px;
+}
+
+.modal-box .hint {
+	margin: 1em;
+	text-align: center;
+}
+.modal-box .text{
+	text-align: center;
+}
+
+.modal-box .controls {
+	position: absolute;
+	bottom: 101px; /*81+20*/
+	left: 1em;
+	right: 1em;
+}
+
+.modal-box .controls small {
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-size: 0.6em;
+}
+
+.backButton {
+	width: 150px;
+	right: 0px;
+}
+
+.deposit {
+	position: fixed;
+	top: 75%;
+	right: 5%;
+	height: 150px;
+	width: 100px;
+	background: rgb(181, 243, 109);
+	text-align: center;
+}
+
+.text {
+	display: none;
+}
+
+.text.failtext {
+	margin-top: 5em;
+	color: red;
+}
+
+.starttext {
+	margin-top: 4em;
+}
+.wintext-1{
+	margin-top: 4em;
+	color: green;
+}
+
+.text .tries-label, .text {
+	font-weight: bold;
+}

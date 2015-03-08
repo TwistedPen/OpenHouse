@@ -1,0 +1,177 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+	overflow: hidden;
+	height: 100%;
+	font-size: 1.5em;
+}
+
+h1 {
+	font-size: 1.5em;
+}
+h2 {
+	font-size: 1.0em;
+}
+
+.ui-body-c, .ui-overlay-c { 
+	background:#ffffff; 
+}
+
+.bottles{
+	position: fixed;
+	left: 0;
+	top: 0;
+}	
+
+.bottleL {
+	position: fixed;
+	left: 20%;
+	height: 190px;
+	width: 300px;
+	bottom: 50%;
+}
+
+.bottleR {
+	position: fixed;
+	right: 20%;
+	height: 317px;
+	width: 300px;
+	bottom: 50%;
+}
+
+.water3 {
+	height: 0px;
+	background: rgba(150, 200, 220,0.9);
+}
+
+.bottle3{
+	height: 190px;
+	text-align: center;
+	/*border: 5px solid #99AAEE;*/
+	/*background: rgba(250, 255, 255,0.66);*/
+}
+
+
+.bottle5{
+	height: 317px;
+	text-align: center;
+	/*border: 5px solid #99AAEE;*/
+	/*background: rgba(250, 255, 250,0.66);*/
+}
+
+.water5 {
+	margin-left: 1px;
+	height: 0px;
+	width: 300px;
+	background: rgba(150, 200, 220,0.9);
+}
+
+.bottle3-control {
+	position: fixed;
+	left: 15%;
+	right: 55%;
+	top: 60%;
+	bottom: 90%;
+}
+.bottle5-control {
+	position: fixed;
+	left: 55%;
+	right: 15%;
+	top: 60%;
+	bottom: 90%;
+}
+
+.bottle-info{
+	text-align: center;
+	margin-top: 50px; 
+}
+
+.hid {
+	position: fixed;
+	bottom: 0.5em;
+	left: 0px;
+	right: 0.5em;
+	height: auto;
+	text-align: center;
+}
+
+.hid.bad {
+	color: rgba(255, 80, 80, 1.0);
+}
+
+.modal-shadow {
+	display: none;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.33);
+}
+
+.modal-box {
+	background-color: rgba(255, 255, 255, 0.8);
+	background-image: url("images/logo-compute.png");
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	position: fixed;
+	left: 10%;
+	top: 10%;
+	width: 80%;
+	height: 80%;
+	border-radius: 1em;
+}
+
+.modal-box-topspacer {
+	height: 134px;
+}
+
+.modal-box .text{
+	text-align: center;
+} 
+
+.modal-box .hint {
+	margin: 1em;
+	text-align: center;
+}
+
+.modal-box .controls {
+	position: absolute;
+	bottom: 101px; /*81+20*/
+	left: 1em;
+	right: 1em;
+}
+
+.modal-box .controls small {
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-size: 0.6em;
+}
+
+.backButton {
+	width: 150px;
+	right: 0px;
+}
+
+.text {
+	display: none;
+}
+
+.starttext {
+	margin-top: 3em;
+}
+
+.text.wintext-1{
+	margin-side: 1em;
+	margin-top: 3em;
+	color: green;
+}
+
+.text .tries-label, .text {
+	font-weight: bold;
+}

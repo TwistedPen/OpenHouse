@@ -1,0 +1,340 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+	overflow: hidden;
+	height: 100%;
+	font-size: 1.5em;
+}
+
+h1 {
+	font-size: 1.5em;
+	margin-top: 1em;
+	text-align: center
+}
+h2 {
+	font-size: 1.0em;
+}
+
+.sky {
+	background: -webkit-gradient(linear, center top, center bottom, color-stop(0.0, hsl(200, 80%, 80%)), color-stop(1.0, hsl(200, 40%, 80%)));
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 0;
+}
+
+.dtu-in-the-sky {
+	position: absolute;
+	background-image: url("images/logo-dtu.png");
+	background-position: right top;
+	background-repeat: no-repeat;
+	width: 436px;
+	height: 134px;
+	top: 0px;
+	right: 0px;
+	z-index: 1;
+}
+
+.cloud {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 2;
+}	
+.cloud1 {
+	background: url('images/cloud1.png');
+	width: 248px;
+	height: 119px;
+}
+
+.cloud2 {
+	background: url('images/cloud2.png');
+	width: 246px;
+	height: 101px;
+}
+
+.cloud3 {
+	background: url('images/cloud3.png');
+	width: 275px;
+	height: 126px;
+}
+
+.cloud4 {
+	background: url('images/cloud4.png');
+	width: 508px;
+	height: 138px;
+}
+
+
+.ground {
+	background: -webkit-gradient(linear, center top, center bottom, color-stop(0.0, hsl(0, 20%, 50%)), color-stop(1.0, hsl(0, 20%, 30%)));
+	/*position: relative;*/
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 4em;
+	z-index: 3;
+}
+
+.skyscraper,
+.skyscraper-front,
+.skyscraper-roof {
+	border-width: 0;
+	border-color: #606060;
+	border-style: solid;
+}
+
+.skyscraper-side {
+	border-width: 0;
+	border-color: #505050;
+	border-style: solid;
+}
+
+.skyscraper {
+	/*position: relative;*/
+	width: 33%;
+	height: auto;
+	z-index: 4;
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
+
+	position: absolute;
+	bottom: 2em;
+}
+
+.skyscraper-front {
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0.0, hsl(0, 0%, 40%)), color-stop(1.0, hsl(0, 0%, 80%)));
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	
+	border-width: 0.2em;
+	border-left-width: 0.0em;
+}
+
+.skyscraper-side {
+	background: #505050;
+	position: absolute;
+	left: 100%;
+	top: 0;
+	bottom: 1.2em;
+	width: 2.0em;
+	
+	border-right-width: 0.2em;
+}
+
+.skyscraper-roof {
+	background: #C0C0C0;
+	position: absolute;
+	left: 0;
+	top: -1.2em;
+	right: -2.2em;
+	height: 2.0em;
+	
+	border-top-width: 0.2em;
+}
+
+.skyscraper-side-top {
+	position: absolute;
+	left: 0;
+	top: -1.2em;
+	height: 0;
+	border-top: 1.2em solid transparent;
+	border-right: 2.2em solid #505050;
+}
+
+.skyscraper-side-bottom {
+	position: absolute;
+	left: 0;
+	bottom: -1.2em;
+	height: 0;
+	border-bottom: 1.2em solid transparent;
+	border-left: 2.2em solid #505050;
+}
+
+.skyscraper-levels {
+	position: relative;
+	height: auto;
+	width: auto;
+}
+
+.skyscraper-level {
+	position: relative;
+	background: rgba(0, 0, 0, 0.1);
+	line-height: 1.2em;
+	margin-top: 0.25em;
+	margin-left: 0.0em;
+	margin-right: 0.5em;
+	border: 0.05em solid rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+	
+	line-height: 1.2em;
+	vertical-align: middle;
+	color: white;
+	font-size: 1.2em;
+	text-shadow: /*0 1px 1px white,*/ 0 -1px 1px #404040;
+	padding-left: 0.5em;
+}
+
+.skyscraper-level:active {
+	background: rgba(0, 0, 0, 0.3);
+}
+
+.egg {
+	position: absolute;
+	background: url('images/egg-small.png');
+	/*width: 111px;
+	height: 127px;*/
+	width: 40px;
+	height: 40px;
+	z-index: 7;
+}
+
+.egg.cracked {
+	background: url('images/egg-cracked-small.png');
+	/*width: 112px;
+	height: 136px;*/
+	width: 40px;
+	height: 40px;
+}
+
+.bar {
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 5;
+}
+
+.bar.red {
+	top: 0;
+	background: rgba(255, 0, 0, 0.15);
+	border-bottom: 0.2em solid rgba(255, 0, 0, 0.5);
+}
+
+.bar.green {
+	bottom: 0;
+	background: rgba(0, 255, 0, 0.15);
+	border-top: 0.2em solid rgba(0, 255, 0, 0.5);
+}
+
+.hid {
+	position: fixed;
+	bottom: 0.5em;
+	left: 0px;
+	right: 0.5em;
+	height: auto;
+	z-index: 9;
+	text-align: right;
+	color: #E0E0E0;
+}
+
+.hid.bad {
+	color: rgba(255, 80, 80, 1.0);
+}
+
+.modal-shadow {
+	display: none;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.33);
+	z-index: 10;
+}
+
+.modal-box {
+	background-color: rgba(255, 255, 255, 0.8);
+	background-image: url("images/logo-compute.png");
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	position: fixed;
+	left: 10%;
+	top: 10%;
+	width: 80%;
+	height: 80%;
+	border-radius: 1em;
+}
+
+.modal-box-topspacer {
+	height: 134px;
+}
+
+.modal-box .text, .modal-box .hint {
+	margin: 2em;
+	text-align: center;
+}
+
+.modal-box .controls {
+	position: absolute;
+	bottom: 101px; /*81+20*/
+	left: 1em;
+	right: 1em;
+}
+
+.modal-box .controls small {
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-size: 0.6em;
+}
+
+.text {
+	display: none;
+}
+
+.text.failtext {
+	color: red;
+}
+
+.text.wintext-1, .text.wintext-2 {
+	color: green;
+}
+
+.text .tries-label, .text .eggs-label {
+	font-weight: bold;
+}
+
+.yoak {
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	/*width: 234px;
+	height: 81px;*/
+	width: 144px;
+	height: 50px;
+	/*margin-left: -117px;*/
+	margin-left: -72px;
+	margin-top: -25px;
+	background: url('images/yoak-small.png');
+	z-index: 3;
+}
+
+/* Scrolling specific */
+.ui-page {
+	height: 100%;
+}
+
+.scrollable {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	width: 100%;
+}
+
+.scrollable-view {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	width: 100%;
+/*	padding-top: 2em;*/
+}
